@@ -1,12 +1,8 @@
 # tcpcapital - use para identificar seu software
-  > Template com Dockerfile para Exemplo do Kurose
-Utilize esse README.md para descrever o processo de implantação de sua aplicação em contêineres Docker
-O código em Python 2 e 3 pode ser encontrado com: git clone http://github.com/othonb/pythonUDPTCP.git
-O arquivo Dockerfile deve permanecer na raiz do repositório, junto com o código da aplicação
-  > Esse trecho de parágrafo deve ser apagado quando a documentação estiver terminada
+
 ## Autores
 
-Rhuan Lima Ruiz de Oliveira (/rhuanruiz)
+Rhuan Lima Ruiz de Oliveira: github: /rhuanruiz - Departamento de Estatística e Ciências Atuariais (DECAT)
 
 ## Descrição da solução desenvolvida
 
