@@ -21,14 +21,32 @@ Rhuan Lima Ruiz de Oliveira (/rhuanruiz)
   
   Após estabelecida a conexão, o cliente pode enviar três tipos de requisição:  
     * GET / HTTP/1.1  
-    * GET / <DIRETÓRIO DO ARQUIVO HTML>  
+    * GET / <!--- DIRETÓRIO DO ARQUIVO HTML --->  
     * GET / HTTP/Tupi  
+      
   De modo que o servidor responde a cada, respectivamente, como:  
     * HTTP/1.1 200 OK  
       Server: Apache  
       Content-Type: text/html  
-      !DOCTYPE html...  
-      <TEXTO EM HTML>  
+      !DOCTYPE html...    
+      <!--- TEXTO EM HTML --->    
+        
+    * HTTP/1.1 200 OK  
+      Server: Apache  
+      Content-Type: text/html  
+      !DOCTYPE html...    
+      <!--- TEXTO EM HTML --->   
+        
+    * HTTP/1.1 200 OK 
+      Tupi  
+      Server: Apache  
+      Content-Type: text/html  
+      !DOCTYPE html...    
+      <!--- TEXTO EM HTML --->  
+        
+   Requisições fora dos padrões acima, serão respondidas pelo servidor por: HTTP/1.1 404 Not Found  
+                                                                            ou  
+                                                                            HTTP/1.1 400 Bad Request  
 
 ## Documentação de Implantação
 
