@@ -21,6 +21,7 @@ Rhuan Lima Ruiz de Oliveira (/rhuanruiz)
   Foi aplicado o protocolo HTTP e o modelo de programação escolhido foi o cliente-servidor.
   
   Após estabelecida a conexão, o cliente pode enviar três tipos de requisição:  
+    
     * GET / HTTP/1.1  
     * GET / <!--- DIRETÓRIO DO ARQUIVO HTML --->  
     * GET / HTTP/Tupi  
@@ -46,7 +47,8 @@ Rhuan Lima Ruiz de Oliveira (/rhuanruiz)
       !DOCTYPE html...    
       <!--- TEXTO EM HTML --->  
         
-   Requisições fora dos padrões acima, serão respondidas pelo servidor por:   
+   Requisições fora dos padrões acima, serão respondidas pelo servidor por:
+     
    HTTP/1.1 404 Not Found    
    ou    
    HTTP/1.1 400 Bad Request    
