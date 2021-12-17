@@ -57,10 +57,14 @@ Rhuan Lima Ruiz de Oliveira (/rhuanruiz)
 
 ### Descreva todo o processo de configuração do container
   
-  > resposta
-
+Primeiramente, os códigos que compõem a aplicação foram enviados a este repositório do github. Códigos estes que incluem: o servidor (http.py), o cliente (cliente.py), os arquivos html salvos (padrao.hml e decat.html) e o teste de simulação do core (httptupi.imn). O acesso remoto ssh foi realizado pelo windows, portanto foi-se utilizado o PuTTY e o Xming. Logo em seguida, após acessar o ambiente do Cedro, o repositório do git foi clonado para o mesmo e o ambiente de trabalho alterado para 2021-1-lab-t1-servidor-nebel. Em procedência, a sintaxe do docker foi alterada para a do python 2, tendo em vista a versão utilizada no desenvolvimento dos códigos para o servidor e cliente.  
+  
+Após os feitos acima, o arquivo Dockerfile teve sua parte de documentação alterada, sua porta foi definida para a utilizada em ambos os códigos do cliente e servidor (5000), e seus diretórios de WORKDIR e CMD adequados aos códigos desta aplicação, de modo que passaram a ser /usr/src/httpcapital e [ "python3", "./http.py], respectivamente. Além disso, a função FROM foi movida para o início do arquivo para que pudesse ser executado.  
+  
+Em procedência ao raciocínio, o comando "$ docker build -t httpcapital ." foi então utilizado para construir a imagem a partir do Dockerfile. E então o container foi montado, utilizando a porta escolhida na planilha (11124), a partir do comando "$ docker run -d -p 11124:5000 -it --rm --name nebel-http httpcapital". Por fim, um commit foi realizado no docker "$ docker commit -a "Rhuan Ruiz" -m “Servidor HTTP”   httpcapital" e os testes foram realizados.  
+  
 ### Descreva como o software pode ser testado em Cedro
-  > resposta
+Por se tratar de um software cliente-servidor protocolo HTTP, o mesmo pode ser testado executando o cliente.py com o comando python, disponível no próprio ambiente de trabalho. Tanto para a requisição do HTTP normal quanto para a do HTTP Tupi retornarão seus respectivos arquivos htmls, padrão.html e decat.html, por meio do conteiner nebel-http, executado através da imagem httpcapital na porta 11124.
 
 
 
