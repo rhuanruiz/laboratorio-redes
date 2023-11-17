@@ -1,8 +1,6 @@
-# tcpcapital - use para identificar seu software
-
 ## Autores
 
-Rhuan Lima Ruiz de Oliveira: github: /rhuanruiz - Departamento de Estatística e Ciências Atuariais (DECAT)
+Rhuan Lima Ruiz de Oliveira
 
 ## Descrição da solução desenvolvida
 
